@@ -139,6 +139,10 @@ details{border-bottom:1px solid var(--line);padding:16px 0}
 summary{cursor:pointer;font-weight:700}
 details p{color:#cfcec8;margin-top:8px}
 .note{font-size:13px;color:var(--mute);margin-top:14px}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.ig-grid a{display:block;aspect-ratio:1/1;overflow:hidden;border-radius:8px;background:var(--bg2)}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.ig-grid a:hover img{transform:scale(1.04)}
 footer{padding:40px 0 60px;color:var(--mute);font-size:13px}
 footer a{color:var(--fg)}
 @media (max-width:600px){nav{display:none} dl.info{grid-template-columns:1fr;gap:2px 0} dl.info dd{margin-bottom:12px}}
@@ -211,6 +215,14 @@ footer a{color:var(--fg)}
   </div>
 </section>
 
+<section id="instagram" hidden>
+  <div class="wrap">
+    <h2 class="en">Instagram</h2>
+    <div class="ig-grid" id="ig-grid"></div>
+    <p class="note"><a href="https://www.instagram.com/agayha_3f">@agayha_3f をフォロー</a></p>
+  </div>
+</section>
+
 <section id="faq">
   <div class="wrap">
     <h2 class="en">FAQ</h2>
@@ -243,5 +255,18 @@ footer a{color:var(--fg)}
     <p>石垣島の夜をもっと知るなら <a href="https://ishigaki-night.vercel.app/">ISHIGAKI NIGHT</a></p>
   </div>
 </footer>
+<script>
+fetch('/data/instagram.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  if(!d.items||!d.items.length)return;
+  const g=document.getElementById('ig-grid');
+  d.items.forEach(m=>{
+    const a=document.createElement('a');a.href=m.link;a.rel='noopener';a.target='_blank';
+    const i=document.createElement('img');i.src=m.image;i.loading='lazy';
+    i.alt=(m.caption||'あがやースタジオのInstagram投稿').replace(/\s+/g,' ').slice(0,80);
+    a.appendChild(i);g.appendChild(a);
+  });
+  document.getElementById('instagram').hidden=false;
+}).catch(()=>{});
+</script>
 </body>
 </html>
