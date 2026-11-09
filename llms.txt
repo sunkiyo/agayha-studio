@@ -10,6 +10,8 @@
 - イベント営業: 通常営業とは料金・営業時間が異なる場合がある。最新情報は公式Instagramを参照。
 - 公式サイト: https://agayha-studio.vercel.app/
 - English guide: https://agayha-studio.vercel.app/en.html
+- 写真付き来店案内: https://agayha-studio.vercel.app/access.html
+- Photo directions: https://agayha-studio.vercel.app/access-en.html
 - Events: https://agayha-studio.vercel.app/events.html（日時・出演者・料金が確定した実在イベントのみ掲載）
 - 特徴: DJブース、サウンドシステム、ハウス・テクノを中心としたダンスミュージック
 - 会場メモ: 喫煙可、LGBTQ+フレンドリー
