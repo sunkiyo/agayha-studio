@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">石垣港離島ターミナルからあがやースタジオまでの徒歩ルート概略図</title>
+  <desc id="desc">離島ターミナルからあがやースタジオまで、徒歩約6分、約450メートルの位置関係を示す概略図です。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f0d15"/>
+      <stop offset="1" stop-color="#22162f"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#153149"/>
+      <stop offset="1" stop-color="#0b1d30"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+  <path d="M0 738 C210 704 414 764 610 733 C820 700 986 730 1200 686 L1200 900 L0 900 Z" fill="url(#sea)"/>
+  <g fill="none" stroke="#3d3946" stroke-width="19" stroke-linecap="round">
+    <path d="M100 160 H1100"/>
+    <path d="M80 330 H1040"/>
+    <path d="M95 510 H1110"/>
+    <path d="M160 675 H1080"/>
+    <path d="M235 95 V695"/>
+    <path d="M460 100 V705"/>
+    <path d="M700 95 V710"/>
+    <path d="M930 100 V700"/>
+  </g>
+  <g fill="none" stroke="#17151d" stroke-width="13" stroke-linecap="round">
+    <path d="M100 160 H1100"/>
+    <path d="M80 330 H1040"/>
+    <path d="M95 510 H1110"/>
+    <path d="M160 675 H1080"/>
+    <path d="M235 95 V695"/>
+    <path d="M460 100 V705"/>
+    <path d="M700 95 V710"/>
+    <path d="M930 100 V700"/>
+  </g>
+  <path d="M940 708 C875 650 820 612 734 550 C660 496 610 442 548 391 C479 334 422 274 355 198" fill="none" stroke="#f1bd4e" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M940 708 C875 650 820 612 734 550 C660 496 610 442 548 391 C479 334 422 274 355 198" fill="none" stroke="#fff2c7" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 26"/>
+  <g transform="translate(355 198)">
+    <circle r="42" fill="#db2777" stroke="#fff" stroke-width="7"/>
+    <path d="M-12 -8 H12 V18 H-12 Z M-18 -18 H18 V-7 H-18 Z" fill="#fff"/>
+    <circle cy="52" r="9" fill="#db2777"/>
+  </g>
+  <g transform="translate(940 708)">
+    <circle r="42" fill="#7c3aed" stroke="#fff" stroke-width="7"/>
+    <path d="M-16 15 V-13 L0-25 L16-13 V15 H5 V-2 H-5 V15 Z" fill="#fff"/>
+  </g>
+  <g font-family="system-ui,-apple-system,'Noto Sans JP',sans-serif" fill="#f7f4ee">
+    <text x="70" y="66" font-size="24" font-weight="800" letter-spacing="4" fill="#f1bd4e">WALKING ROUTE OVERVIEW</text>
+    <text x="70" y="109" font-size="18" fill="#bdb7c6">概略図 / NOT TO SCALE</text>
+    <g transform="translate(408 175)">
+      <rect x="0" y="0" width="510" height="96" rx="18" fill="#0d0b12" stroke="#db2777" stroke-width="2"/>
+      <text x="24" y="38" font-size="26" font-weight="800">あがやースタジオ</text>
+      <text x="24" y="70" font-size="20" fill="#d6cfda">Agayha Studio · Ocean Building 3F</text>
+    </g>
+    <g transform="translate(574 720)">
+      <rect x="0" y="0" width="452" height="108" rx="18" fill="#0d0b12" stroke="#7c3aed" stroke-width="2"/>
+      <text x="24" y="41" font-size="25" font-weight="800">石垣港離島ターミナル</text>
+      <text x="24" y="76" font-size="20" fill="#d6cfda">Ferry Terminal</text>
+    </g>
+    <g transform="translate(560 555)">
+      <rect x="0" y="0" width="284" height="78" rx="39" fill="#f1bd4e"/>
+      <text x="142" y="33" text-anchor="middle" font-size="22" font-weight="900" fill="#17120a">徒歩 約6分</text>
+      <text x="142" y="59" text-anchor="middle" font-size="18" font-weight="800" fill="#17120a">6 MIN · 450 M</text>
+    </g>
+    <text x="78" y="860" font-size="18" fill="#93a9bd">ISHIGAKI PORT AREA</text>
+  </g>
+</svg>
